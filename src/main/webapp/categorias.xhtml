@@ -6,6 +6,8 @@
                 xmlns:p="http://primefaces.org/ui">
     <ui:define name="content">
         <h2 class="page-header">Gerenciar Categorias</h2>
+        <f:event type="preRenderView" listener="#{categoriasBean.checkAlreadyLoggedin}" />
+
         <br/>
         <h:form id="formPrincipal">
            

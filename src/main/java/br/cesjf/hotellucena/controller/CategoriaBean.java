@@ -7,6 +7,7 @@ package br.cesjf.hotellucena.controller;
 
 import br.cesjf.hotellucena.dao.CategoriaDAO;
 import br.cesjf.hotellucena.model.Categoria;
+import br.cesjf.hotellucena.model.Usuarios;
 import java.util.ArrayList;
 import javax.faces.bean.ViewScoped;
 import javax.faces.event.ActionEvent;
@@ -17,7 +18,10 @@ import com.lowagie.text.DocumentException;
 import com.lowagie.text.PageSize;
 import java.io.IOException;
 import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.faces.bean.ManagedBean;
+import javax.faces.context.ExternalContext;
 import javax.faces.context.FacesContext;
 import javax.servlet.ServletContext;
 import org.apache.poi.hssf.usermodel.HSSFCell;
@@ -46,6 +50,19 @@ public class CategoriaBean {
         categoria = new Categoria();
     }
 
+    public void checkAlreadyLoggedin(){
+        
+        Usuarios usuario = (Usuarios)FacesContext.getCurrentInstance().getExternalContext().getSessionMap().get("usuario");
+        if(usuario == null){
+            try {
+                ExternalContext ec = FacesContext.getCurrentInstance().getExternalContext();
+                ec.redirect(ec.getRequestContextPath() + "/faces/login.xhtml");
+            } catch (IOException ex) {
+                Logger.getLogger(ItensBean.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }
+    
+    }
     //Métodos dos botões 
     public void record(ActionEvent actionEvent) {
         new CategoriaDAO().persistir(categoria);

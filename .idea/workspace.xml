@@ -1,108 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6a9f9463-01a2-468b-b405-e8842406cea5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HotelLucena.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nb-configuration.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/cesjf/hotellucena/controller/ApartamentoBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/cesjf/hotellucena/controller/CategoriaBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/cesjf/hotellucena/controller/ConsultaApartamentoBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/cesjf/hotellucena/controller/ConsultaUsuariosBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/cesjf/hotellucena/controller/ConsultasReservasBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/cesjf/hotellucena/controller/ItensBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/cesjf/hotellucena/controller/LoginBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/cesjf/hotellucena/controller/ReservasBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/cesjf/hotellucena/controller/UsuariosBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/cesjf/hotellucena/converter/ApartamentoConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/cesjf/hotellucena/converter/CategoriaConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/cesjf/hotellucena/converter/UsuarioConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/cesjf/hotellucena/dao/ApartamentoDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/cesjf/hotellucena/dao/CategoriaDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/cesjf/hotellucena/dao/ItensDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/cesjf/hotellucena/dao/ReservasDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/cesjf/hotellucena/dao/UsuariosDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/cesjf/hotellucena/decorator/ServicosExtras.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/cesjf/hotellucena/model/Apartamento.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/cesjf/hotellucena/model/Categoria.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/cesjf/hotellucena/model/Item.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/cesjf/hotellucena/model/Reservas.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/cesjf/hotellucena/model/Usuarios.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/cesjf/hotellucena/util/PersistenceUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/META-INF/context.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/glassfish-resources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/glassfish-web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/sun-jaxws.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/head.xhtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/header.xhtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/templates/layout.xhtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/apartamentos.xhtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/categorias.xhtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/consulta_quarto.xhtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/consulta_usuarios.xhtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.xhtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/itens.xhtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/login.xhtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/relatorio.xhtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/relatorio_apartamento.xhtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/relatorio_checkout.xhtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/relatorio_usuario.xhtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/reservas.xhtml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/bootstrap-grid.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/font-awesome.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/pfcrud.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/vis.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/fonts/FontAwesome.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/fonts/fontawesome-webfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/fonts/fontawesome-webfont.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/fonts/fontawesome-webfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/fonts/fontawesome-webfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/ajaxloadingbar.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/ajaxloadingbar1.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/exports/csv.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/exports/excel.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/exports/pdf.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/exports/xml.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/network/acceptDeleteIcon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/network/addNodeIcon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/network/backIcon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/network/connectIcon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/network/cross.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/network/cross2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/network/deleteIcon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/network/downArrow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/network/editIcon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/network/leftArrow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/network/minus.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/network/plus.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/network/rightArrow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/network/upArrow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/network/zoomExtends.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/shattered.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/images/timeline/delete.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/guid.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/vis.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/vis.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/resources/scripts/pfcrud.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/usuarios.xhtml" afterDir="false" />
+    <list default="true" id="6a9f9463-01a2-468b-b405-e8842406cea5" name="Default Changelist" comment="initial">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <excluded-from-favorite>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="master" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </excluded-from-favorite>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1b6XA0l9R7hzf6zAANAfKTHbQU0" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -112,6 +51,36 @@
       <option name="presentableId" value="Default" />
       <updated>1587953373271</updated>
     </task>
+    <task id="LOCAL-00001" summary="initial">
+      <created>1587953775822</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1587953775822</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="initial" />
+    <option name="LAST_COMMIT_MESSAGE" value="initial" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1750" y="262" key="Github.ShareDialog" timestamp="1587953500018">
+      <screen x="1366" y="0" width="1024" height="728" />
+    </state>
+    <state x="1750" y="262" key="Github.ShareDialog/0.0.1366.728/1366.0.1024.728@1366.0.1024.728" timestamp="1587953500018" />
+    <state x="1700" y="62" key="Github.UntrackedFilesDialog" timestamp="1587953536612">
+      <screen x="1366" y="0" width="1024" height="728" />
+    </state>
+    <state x="1700" y="62" key="Github.UntrackedFilesDialog/0.0.1366.728/1366.0.1024.728@1366.0.1024.728" timestamp="1587953536612" />
+    <state x="1470" y="97" key="Vcs.Push.Dialog.v2" timestamp="1587953786990">
+      <screen x="1366" y="0" width="1024" height="728" />
+    </state>
+    <state x="1470" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728/1366.0.1024.728@1366.0.1024.728" timestamp="1587953786990" />
+    <state x="1597" y="152" key="git4idea.merge.GitPullDialog" timestamp="1587953782348">
+      <screen x="1366" y="0" width="1024" height="728" />
+    </state>
+    <state x="1597" y="152" key="git4idea.merge.GitPullDialog/0.0.1366.728/1366.0.1024.728@1366.0.1024.728" timestamp="1587953782348" />
   </component>
 </project>

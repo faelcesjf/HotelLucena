@@ -6,6 +6,8 @@
                 xmlns:p="http://primefaces.org/ui">
     <ui:define name="content">
         <h2 class="page-header">Consulta do Usuário</h2>
+        <f:event type="preRenderView" listener="#{consultaUsuariosBean.checkAlreadyLoggedin}" />
+
         <br/>
         <center>
             <h:form>

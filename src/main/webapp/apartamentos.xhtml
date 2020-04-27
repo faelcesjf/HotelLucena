@@ -5,6 +5,8 @@
                 xmlns:ui="http://java.sun.com/jsf/facelets"
                 xmlns:p="http://primefaces.org/ui">
     <ui:define name="content">
+        <f:event type="preRenderView" listener="#{apartamentosBean.checkAlreadyLoggedin}" />
+
         <h2 class="page-header">Gerenciamento de Apartamentos</h2>
         <br/>
         <h:form id="formPrincipal">

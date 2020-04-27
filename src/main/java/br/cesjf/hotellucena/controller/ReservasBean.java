@@ -7,6 +7,7 @@ package br.cesjf.hotellucena.controller;
 
 import br.cesjf.hotellucena.dao.ReservasDAO;
 import br.cesjf.hotellucena.model.Reservas;
+import br.cesjf.hotellucena.model.Usuarios;
 import java.util.ArrayList;
 import javax.faces.bean.ViewScoped;
 import javax.faces.event.ActionEvent;
@@ -18,8 +19,11 @@ import com.lowagie.text.PageSize;
 import java.io.IOException;
 import java.time.Duration;
 import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.faces.application.FacesMessage;
 import javax.faces.bean.ManagedBean;
+import javax.faces.context.ExternalContext;
 import javax.faces.context.FacesContext;
 import javax.servlet.ServletContext;
 import org.apache.poi.hssf.usermodel.HSSFCell;
@@ -148,4 +152,17 @@ public class ReservasBean {
         return reservas;
     }
 
+     public void checkAlreadyLoggedin(){
+        
+        Usuarios usuario = (Usuarios)FacesContext.getCurrentInstance().getExternalContext().getSessionMap().get("usuario");
+        if(usuario == null){
+            try {
+                ExternalContext ec = FacesContext.getCurrentInstance().getExternalContext();
+                ec.redirect(ec.getRequestContextPath() + "/faces/login.xhtml");
+            } catch (IOException ex) {
+                Logger.getLogger(ItensBean.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }
+    
+    }
 }

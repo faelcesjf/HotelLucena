@@ -15,8 +15,11 @@ import com.lowagie.text.DocumentException;
 import com.lowagie.text.PageSize;
 import java.io.IOException;
 import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.SessionScoped;
+import javax.faces.context.ExternalContext;
 import javax.faces.context.FacesContext;
 import javax.servlet.ServletContext;
 import org.apache.poi.hssf.usermodel.HSSFCell;
@@ -87,5 +90,24 @@ public class ConsultaUsuariosBean {
         //String logo = servletContext.getRealPath("") + File.separator + "resources" + File.separator + "demo" + File.separator + "images" + File.separator + "prime_logo.png";
 
         // pdf.add(Image.getInstance(logo));
+    }
+    
+         public void checkAlreadyLoggedin() throws IOException{
+        
+        Usuarios usuario = (Usuarios)FacesContext.getCurrentInstance().getExternalContext().getSessionMap().get("usuario");
+        if(usuario == null){
+            try {
+                ExternalContext ec = FacesContext.getCurrentInstance().getExternalContext();
+                ec.redirect(ec.getRequestContextPath() + "/faces/login.xhtml");
+            } catch (IOException ex) {
+                Logger.getLogger(ItensBean.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }
+        else if (usuario.getTipoUsuariol().equals("Gerente") == false){
+             ExternalContext ec = FacesContext.getCurrentInstance().getExternalContext();
+             ec.redirect(ec.getRequestContextPath() + "/faces/acessonegado.xhtml");
+        }
+        
+    
     }
 }

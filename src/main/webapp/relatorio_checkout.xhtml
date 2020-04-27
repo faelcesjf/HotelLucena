@@ -6,6 +6,8 @@
                 xmlns:p="http://primefaces.org/ui">
     <ui:define name="content">
         <h2 class="page-header">Relatório Check out</h2>
+                    <f:event type="preRenderView" listener="#{consultaReservasBean.checkAlreadyLoggedin}" />
+
         <br/>
         <center>
             <h:form>
@@ -43,7 +45,7 @@
 
                     <h:outputLabel value="Número de Hospedes:" styleClass="panelGridLabel" />
                     <h:outputText value="#{consultaReservasBean.reservas.numeroHospedes}" />                    
-
+                    <h:outputLabel value="Total consumo" styleClass="panelGridLabel" />
                     <h:outputLabel value="Valor Pago:" styleClass="panelGridLabel" />
                     <h:outputText value="#{consultaReservasBean.reservas.camaExtra(consultaReservasBean.reservas)}" >
                         <f:convertNumber currencyCode="BRL" type="currency" />

@@ -7,6 +7,8 @@
     <ui:define name="content">
         <h2 class="page-header">Consultar Usuário</h2>
         <br/>
+        <f:event type="preRenderView" listener="#{usuariosBean.checkAlreadyLoggedin}" />
+
 
         <h:form>
             <p:dataTable var="lista" value="#{usuariosBean.usuarioss}"

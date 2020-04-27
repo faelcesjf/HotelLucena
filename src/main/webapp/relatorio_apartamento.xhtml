@@ -8,6 +8,8 @@
         <h2 class="page-header">Consulta do Apartamento</h2>
         <br/>
         <center>
+            <f:event type="preRenderView" listener="#{consultaApartamentosBean.checkAlreadyLoggedin}" />
+
             <h:form>
                 <h:panelGrid columns="2" cellpadding="10">
                     <h:outputLabel value="Código:" styleClass="panelGridLabel" />

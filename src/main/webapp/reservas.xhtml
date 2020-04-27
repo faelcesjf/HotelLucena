@@ -7,6 +7,7 @@
     <ui:define name="content">
         <h2 class="page-header">Gerenciamento de Reservas</h2>
         <br/>
+        <f:event type="preRenderView" listener="#{reservasBean.checkAlreadyLoggedin}" />
 
         <h:form id="formPrincipal">
             <p:messages id="messages" showDetail="true" autoUpdate="true" closable="true" />
