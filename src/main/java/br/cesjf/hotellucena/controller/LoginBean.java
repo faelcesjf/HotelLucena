@@ -7,11 +7,15 @@ package br.cesjf.hotellucena.controller;
 
 import br.cesjf.hotellucena.dao.UsuariosDAO;
 import br.cesjf.hotellucena.model.Usuarios;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.faces.application.FacesMessage;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ViewScoped;
+import javax.faces.context.ExternalContext;
 import javax.faces.context.FacesContext;
 
 /**
@@ -60,5 +64,19 @@ public class LoginBean {
 
     public void setUsuarios(Usuarios usuario) {
         this.usuario = usuario;
+    }
+    
+        public void checkAlreadyLoggedin(){
+        
+        Usuarios usuario = (Usuarios)FacesContext.getCurrentInstance().getExternalContext().getSessionMap().get("usuario");
+        if(usuario == null){
+            try {
+                ExternalContext ec = FacesContext.getCurrentInstance().getExternalContext();
+                ec.redirect(ec.getRequestContextPath() + "/faces/login.xhtml");
+            } catch (IOException ex) {
+                Logger.getLogger(ItensBean.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }
+    
     }
 }
