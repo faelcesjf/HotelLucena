@@ -10,7 +10,7 @@
         <f:event type="preRenderView" listener="#{reservasBean.checkAlreadyLoggedin}" />
 
         <h:form id="formPrincipal">
-            <p:messages id="messages" showDetail="true" autoUpdate="true" closable="true" />
+            <p:messages id="messages" showDetail="true"  closable="true" />
             <div align="center">
                 <p:dataTable var="lista" value="#{reservasBean.reservass}"
                              id="tabelaActivity" emptyMessage="Nenhum registro encontrado"

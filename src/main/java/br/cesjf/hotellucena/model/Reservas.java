@@ -180,6 +180,7 @@ public class Reservas extends ServicosExtras implements Serializable {
     @Override
     public Double camaExtra(Reservas reserva) {
         Double total =  new Double(0);
+        reserva.setCodigoReserva(2);
         if(reserva.getCodigoReserva() != null){
             if (reserva.getNumeroHospedes() <= reserva.getApartamentocodigoApartamento().getCategoriacodigoCategoria().getCapacidade()) {
                 total = reserva.getApartamentocodigoApartamento().getCategoriacodigoCategoria().getValorDiaria() * 1.0;
