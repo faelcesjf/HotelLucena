@@ -47,7 +47,7 @@ FROM reservas AS r
 			<frame>
 				<reportElement mode="Opaque" x="-20" y="-20" width="595" height="92" backcolor="#FF0011" uuid="f6a8537a-9dd5-48f5-8b95-7838d494d62a"/>
 				<staticText>
-					<reportElement x="20" y="20" width="380" height="43" forecolor="#FFFFFF" uuid="14a66af7-83ea-4f63-85dc-bdb79969321d"/>
+					<reportElement x="20" y="20" width="380" height="43" forecolor="#0D0D0D" uuid="14a66af7-83ea-4f63-85dc-bdb79969321d"/>
 					<textElement>
 						<font size="34" isBold="true"/>
 					</textElement>
@@ -98,7 +98,7 @@ FROM reservas AS r
 				<textElement textAlignment="Center">
 					<font size="10" isBold="true"/>
 				</textElement>
-				<text><![CDATA[Nº Hospedes]]></text>
+				<text><![CDATA[Hospedes]]></text>
 			</staticText>
 			<staticText>
 				<reportElement mode="Opaque" x="316" y="0" width="79" height="20" forecolor="#00FF19" backcolor="#E6E6E6" uuid="5358f13a-2aa5-48bc-a266-be15f7525ab0">
