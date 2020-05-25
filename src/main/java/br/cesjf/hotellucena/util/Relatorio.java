@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package br.cesjf.hotellucena.util;
 
 import java.io.ByteArrayOutputStream;
@@ -25,7 +21,10 @@ import net.sf.jasperreports.engine.JasperPrint;
 import net.sf.jasperreports.engine.JasperReport;
 import net.sf.jasperreports.engine.util.JRLoader;
 
-
+/**
+ *
+ * @author dmeireles
+ */
 public class Relatorio {
     
     private HttpServletResponse response;
@@ -39,11 +38,14 @@ public class Relatorio {
         this.response = (HttpServletResponse) context.getExternalContext().getResponse();
     }
    
-    public void getRelatorio(String relatorio){
+    public void getRelatorio(String relatorio, Date dataInicial, Date dataFinal){
         
         stream = this.getClass().getResourceAsStream("/"+relatorio+".jasper");
         Map<String, Object> params = new HashMap<String, Object>();
-
+        if(dataInicial != null) {
+            params.put("p_inicio", dataInicial);
+            params.put("p_fim", dataFinal);
+        }
         baos = new ByteArrayOutputStream();
         
         try {
@@ -74,7 +76,7 @@ public class Relatorio {
     public Connection getConexao(){        
         try {            
             Class.forName("com.mysql.jdbc.Driver");
-            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/hotellucena?autoReconnect=true&useSSL=false", "root", "");
+            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/BibliotecaLPWSD?autoReconnect=true&useSSL=false", "root", "root");
             return con;
             
         } catch (SQLException ex) {
