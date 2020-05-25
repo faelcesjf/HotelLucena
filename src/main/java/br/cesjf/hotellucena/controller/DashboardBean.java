@@ -150,7 +150,7 @@ public class DashboardBean{
          
         Title title = new Title();
         title.setDisplay(true);
-        title.setText("Gráfico de Livros Emprestados nos 3 Últimos Meses");
+        title.setText("Gráfico de Reservas nos 3 Últimos Meses");
         options.setTitle(title);
  
         Legend legend = new Legend();
