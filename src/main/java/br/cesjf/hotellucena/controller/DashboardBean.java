@@ -36,7 +36,7 @@ public class DashboardBean{
     
     public DashboardBean(){
         this.dao = new ReservasDAO();
-        this.reservas = this.dao.buscarTodas();
+        this.reservas = this.dao.buscarAtivos();
         
     }
     
